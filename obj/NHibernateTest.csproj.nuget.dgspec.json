@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {}
+    "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {
+    "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
+        "projectUniqueName": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
         "projectName": "NHibernateTest",
-        "projectPath": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
+        "projectPath": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
         "packagesPath": "C:\\Users\\Bryan Herrera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\obj\\",
+        "outputPath": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bryan Herrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,7 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -39,6 +39,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.3.8, )"
+            },
+            "NHibernate.NetCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

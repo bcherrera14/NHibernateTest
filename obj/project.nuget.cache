@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "hpyfsZWfndUUWZ8g5ooBADdJYr3SXy+QTFTDwaBGNIOlGcuaeaP7tZ5/JozC8Cm/l7u2COcvrVye8UwQ7ioL4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Bryan Herrera\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

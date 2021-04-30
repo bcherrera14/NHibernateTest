@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+
     public class User
     {
         public virtual int ID { get; set; }

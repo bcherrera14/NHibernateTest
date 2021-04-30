@@ -17,10 +17,10 @@ namespace NHibernateTest
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, ILoggerFactory factory)
+        public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            factory.UseAsHibernateLoggerFactory();
+            // factory.UseAsHibernateLoggerFactory();
         }
 
         public IConfiguration Configuration { get; }
@@ -28,9 +28,9 @@ namespace NHibernateTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"hibernate.cfg.xml");
-            services.AddHibernate(path);
-            services.AddMvc();
+            // var path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"hibernate.cfg.xml");
+            // services.AddHibernate(path);
+            // services.AddMvc();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

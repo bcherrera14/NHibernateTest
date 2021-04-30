@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {}
+    "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {
+    "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
+        "projectUniqueName": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
         "projectName": "NHibernateTest",
-        "projectPath": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
+        "projectPath": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\NHibernateTest.csproj",
         "packagesPath": "C:\\Users\\Bryan Herrera\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\obj\\",
+        "outputPath": "C:\\Users\\Bryan Herrera\\OneDrive\\Mastermind Program\\projects\\tutorials\\NHibernateTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bryan Herrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,7 @@
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net5.0": {

@@ -1,15 +1,15 @@
 <?xml version = "1.0" encoding = "utf-8" ?> 
 
 <hibernate-mapping xmlns = "urn:nhibernate-mapping-2.2" 
-   assembly = "NHibernateTest" namespace = "NHibernateTest">
+   assembly = "NHibernateTest" namespace = "Models">
 
-   <class name = "User"> 
-      <id name = "ID">
+   <class name = "User" table="users"> 
+      <id name = "id">
         <generator class = "native"/> 
       </id> 
 		
-      <property name = "LastName"/> 
-      <property name = "FirstMidName"/> 
+      <property name = "lastname"/> 
+      <property name = "firstname"/> 
    </class> 
    
 </hibernate-mapping>

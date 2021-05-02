@@ -6,7 +6,7 @@
          server=localhost;
 		 port=5432;
          database=postgres;
-         userid=postgres;
+         user id=postgres;
          password=password;
       </property> 
       

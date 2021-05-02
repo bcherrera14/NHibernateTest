@@ -13,20 +13,24 @@ namespace NHibernateTest.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        // private static ISessionFactory _sessionFactory;
-        // public UserController(ISessionFactory factory){
-        //     _sessionFactory = factory;
-        // }
-        [HttpGet("api/users")]
-        public ActionResult GetUsers() {
-            return Ok("Users!");
+        private ISessionFactory _sessionFactory;
+        public UserController(ISessionFactory factory)
+        {
+            _sessionFactory = factory;
         }
+        [HttpGet("api/users")]
+        /*public ActionResult GetUsers()
+        {
+            return Ok("Test Users!");
+        }*/
 
-        // public ActionResult<IEnumerable<User>> Get() {
-        //     using (var session = _sessionFactory.OpenSession()) {
-        //     var query = session.Query<User>();
-        //     return query.ToList();
-        //     }
-        // }
+        public ActionResult<IEnumerable<User>> GetUsers()
+        {
+            using (var session = _sessionFactory.OpenSession())
+            {
+                var query = session.Query<User>();
+                return query.ToList();
+            }
+        }
     }
 }

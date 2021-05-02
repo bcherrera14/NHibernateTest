@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using NHibernate.NetCore;
+using NHibernateTest.Controllers;
 
 namespace NHibernateTest
 {
@@ -28,9 +29,9 @@ namespace NHibernateTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // var path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"hibernate.cfg.xml");
-            // services.AddHibernate(path);
-            // services.AddMvc();
+            var cfg = new NHibernate.Cfg.Configuration().Configure();
+            var path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hibernate.cfg.xml");
+            services.AddHibernate(path);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

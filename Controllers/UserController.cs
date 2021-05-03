@@ -49,5 +49,22 @@ namespace NHibernateTest.Controllers
             return Ok(string.Format("Created Users {0}: {1} {2}", id, firstname, lastname));
         }
 
+        [HttpDelete("api/users")]
+        public ActionResult DeleteUser(string id)
+        {
+            using (var session = _sessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var user_id = Int32.Parse(id);
+                    var user = session.Get<User>(user_id);
+                    Console.WriteLine(user);
+
+                    session.Delete(user);
+                    transaction.Commit();
+                }
+            }
+            return Ok(string.Format("Deleted Users with ID: {0}", id));
+        }
     }
 }

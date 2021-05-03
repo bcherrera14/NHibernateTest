@@ -4,12 +4,11 @@
    assembly = "NHibernateTest" namespace = "Models">
 
    <class name = "User" table="users"> 
-      <id name = "id">
-        <generator class = "native"/> 
-      </id> 
-		
-      <property name = "lastname"/> 
-      <property name = "firstname"/> 
+      <id name = "id" column="id" type="int">
+        
+      </id>
+      <property name = "firstname" column="firstname" type="string"/> 
+      <property name = "lastname" column="lastname" type="string"/> 
    </class> 
    
 </hibernate-mapping>

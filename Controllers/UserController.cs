@@ -19,11 +19,6 @@ namespace NHibernateTest.Controllers
             _sessionFactory = factory;
         }
         [HttpGet("api/users")]
-        /*public ActionResult GetUsers()
-        {
-            return Ok("Test Users!");
-        }*/
-
         public ActionResult<IEnumerable<User>> GetUsers()
         {
             using (var session = _sessionFactory.OpenSession())
@@ -32,5 +27,27 @@ namespace NHibernateTest.Controllers
                 return query.ToList();
             }
         }
+
+        [HttpGet("api/users/create")]
+        public ActionResult Get()
+        {
+            using (var session = _sessionFactory.OpenSession())
+            {
+                using (var transaction = session.BeginTransaction())
+                {
+                    var newUser = new User();
+                    newUser.id = 3;
+                    newUser.firstname = "John";
+                    newUser.lastname = "Smith";
+                 
+
+                    session.Save(newUser);
+                    transaction.Commit();
+                }
+                /*Console.ReadLine();*/
+            }
+            return Ok("Create Users!");
+        }
+
     }
 }

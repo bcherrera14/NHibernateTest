@@ -32,21 +32,25 @@ namespace NHibernateTest.Controllers
         [HttpPost("api/users")]
         public ActionResult PostUser(string id, string firstname, string lastname)
         {
+            
+
             using (var session = _sessionFactory.OpenSession())
             {
                 using (var transaction = session.BeginTransaction())
                 {
                     var newUser = new User();
-                    newUser.id = Int32.Parse(id);
+                    /*newUser.id = Int32.Parse(id);*/
+
                     newUser.firstname = firstname;
                     newUser.lastname = lastname;
 
 
                     session.Save(newUser);
+                    Console.WriteLine(newUser.id);
                     transaction.Commit();
                 }
             }
-            return Ok(string.Format("Created Users {0}: {1} {2}", id, firstname, lastname));
+            return Ok(string.Format("Created Users {0} {1}", firstname, lastname));
         }
 
         [HttpDelete("api/users")]
